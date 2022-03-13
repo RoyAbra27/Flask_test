@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}About{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<h1>About</h1>
+<p class="important">
+    Hello {{ name }}.
+    This is an about page. {% endblock %}
+    {% block footer %}
+    {{super()}}
+    {% endblock %}

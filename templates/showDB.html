@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}Show DB{% endblock %}
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+{% block content %}
+<h1 style="text-align: center;">This is your DB</h1>
+{{jsonDB}}
+
+{% endblock %}
+{% block footer %}
+{{super()}}
+{% endblock %}
